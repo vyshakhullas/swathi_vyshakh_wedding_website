@@ -66,7 +66,7 @@ if (gallerySlider && galleryPrev && galleryNext) {
 
 // ---------- RSVP form: submit straight into the Google Sheet ----------
 // Deployed from google-apps-script/Code.gs — see google-apps-script/README.md.
-const RSVP_ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+const RSVP_ENDPOINT = 'https://script.google.com/macros/s/AKfycby75sY8yjGmsmU_WGVYoW--g_h74HVQHd-IfBi31Hi6tJfYunC-anb0dX4VkYjqhhy1/exec';
 
 const rsvpForm = document.getElementById('rsvpForm');
 const formSuccess = document.getElementById('formSuccess');
