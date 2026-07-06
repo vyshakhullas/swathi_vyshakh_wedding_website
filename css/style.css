@@ -294,6 +294,13 @@ section + section { border-top: 1px solid var(--line); }
   margin: 0 0 0.75rem;
 }
 
+.event-note {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0 0 1.5rem;
+}
+
 .event-detail-list {
   list-style: none;
   margin: 0 0 1.5rem;
