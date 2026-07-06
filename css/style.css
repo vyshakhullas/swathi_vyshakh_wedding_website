@@ -150,6 +150,15 @@ a { color: inherit; }
   padding: clamp(3rem, 10vw, 7rem) 0 clamp(3rem, 8vw, 5rem);
 }
 
+.hero.bg-beige {
+  background-image: url('../images/hero/header.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: min(900px, 80%) auto;
+  background-color: rgb(246, 242, 233);
+  padding-bottom: clamp(12rem, 22vw, 18rem);
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
