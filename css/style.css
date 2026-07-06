@@ -431,6 +431,41 @@ section + section { border-top: 1px solid var(--line); }
 .travel-card li { margin-bottom: 0.4rem; }
 .travel-card p + p { margin-top: 0.6rem; }
 
+/* ---------- Gifting ---------- */
+.gifting-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 640px;
+}
+
+.gifting-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.gifting-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--green);
+  margin: 0 0 0.35rem;
+}
+
+.gifting-sub {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.25rem;
+}
+
+.qr-img {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+}
+
 /* ---------- RSVP ---------- */
 .rsvp-shell {
   display: grid;
@@ -630,6 +665,8 @@ footer {
   .gallery-grid .g-6 { grid-column: span 2; grid-row: span 2; }
 
   .travel-card { grid-column: span 12; }
+
+  .gifting-grid { grid-template-columns: 1fr; max-width: 320px; }
 
   .rsvp-intro { grid-column: 1 / -1; }
   .rsvp-form { grid-column: 1 / -1; }
