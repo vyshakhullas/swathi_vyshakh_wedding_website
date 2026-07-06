@@ -236,24 +236,22 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
 .bg-beige { background: var(--paper); }
 
 .bg-green { background: var(--green); }
-.bg-green .eyebrow { color: var(--terracotta); }
-.bg-green .heading-block h2,
-.bg-green .hero-names { color: var(--cream); }
-.bg-green .heading-block p { color: rgba(250, 246, 239, 0.75); }
-.bg-green .section-index { -webkit-text-stroke-color: rgba(250, 246, 239, 0.4); }
+section.bg-green .eyebrow { color: var(--terracotta); }
+section.bg-green .heading-block h2 { color: var(--cream); }
+section.bg-green .heading-block p { color: rgba(250, 246, 239, 0.75); }
+section.bg-green .section-index { -webkit-text-stroke-color: rgba(250, 246, 239, 0.4); }
 
 .bg-terracotta { background: var(--terracotta); }
-.bg-terracotta .eyebrow { color: var(--green-dim); }
-.bg-terracotta .heading-block h2,
-.bg-terracotta .hero-names { color: var(--cream); }
-.bg-terracotta .heading-block p,
-.bg-terracotta .gallery-note,
-.bg-terracotta .rsvp-intro p { color: rgba(250, 246, 239, 0.85); }
-.bg-terracotta .section-index { -webkit-text-stroke-color: rgba(250, 246, 239, 0.45); }
-.bg-terracotta .rsvp-deadline { border-top-color: rgba(250, 246, 239, 0.3); }
-.bg-terracotta .rsvp-deadline .num { color: var(--cream); }
-.bg-terracotta .rsvp-deadline .label { color: rgba(250, 246, 239, 0.7); }
-.bg-terracotta .gallery-grid figure { border-color: rgba(250, 246, 239, 0.35); }
+section.bg-terracotta .eyebrow { color: var(--green-dim); }
+section.bg-terracotta .heading-block h2 { color: var(--cream); }
+section.bg-terracotta .heading-block p,
+section.bg-terracotta .gallery-note,
+section.bg-terracotta .rsvp-intro p { color: rgba(250, 246, 239, 0.85); }
+section.bg-terracotta .section-index { -webkit-text-stroke-color: rgba(250, 246, 239, 0.45); }
+section.bg-terracotta .rsvp-deadline { border-top-color: rgba(250, 246, 239, 0.3); }
+section.bg-terracotta .rsvp-deadline .num { color: var(--cream); }
+section.bg-terracotta .rsvp-deadline .label { color: rgba(250, 246, 239, 0.7); }
+section.bg-terracotta .gallery-grid figure { border-color: rgba(250, 246, 239, 0.35); }
 
 .section-head {
   display: grid;
