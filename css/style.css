@@ -453,6 +453,50 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
 .travel-card li { margin-bottom: 0.4rem; }
 .travel-card p + p { margin-top: 0.6rem; }
 
+/* ---------- Attire ---------- */
+.attire-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.attire-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: clamp(1.75rem, 3vw, 2.75rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.attire-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  margin-bottom: 1.5rem;
+}
+
+.attire-card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--green);
+  margin: 0 0 0.75rem;
+}
+
+.attire-card p {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.6rem;
+}
+
+.attire-note {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--terracotta);
+  margin-top: 0.75rem !important;
+}
+
 /* ---------- Gifting ---------- */
 .gifting-grid {
   display: grid;
@@ -687,6 +731,8 @@ footer {
   .gallery-grid .g-1 { grid-column: span 2; grid-row: span 2; }
 
   .travel-card { grid-column: span 12; }
+
+  .attire-grid { grid-template-columns: 1fr; }
 
   .gifting-grid { grid-template-columns: 1fr; max-width: 320px; }
 
