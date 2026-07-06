@@ -163,6 +163,7 @@ a { color: inherit; }
   grid-column: 1 / 10;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: clamp(0.75rem, 2.5vw, 1.75rem);
   --name-size: clamp(3rem, 9vw, 7.5rem);
 }
@@ -170,12 +171,13 @@ a { color: inherit; }
 .hero-names {
   font-size: var(--name-size);
   margin: 0;
+  text-align: center;
 }
 
 .couple-avatar {
   flex-shrink: 0;
-  width: var(--name-size);
-  height: var(--name-size);
+  width: calc(var(--name-size) * 2);
+  height: calc(var(--name-size) * 2);
   border-radius: 50%;
   object-fit: cover;
 }
