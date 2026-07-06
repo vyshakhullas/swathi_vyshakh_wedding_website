@@ -471,6 +471,30 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   margin: 0 0 1.5rem;
 }
 
+.rituals-heading {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin: 0 0 0.75rem;
+}
+
+.rituals-heading:not(:first-child) { margin-top: 1.25rem; }
+
+.rituals-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(250, 246, 239, 0.8);
+}
+
+.rituals-list li { margin-bottom: 0.75rem; }
+.rituals-list li:last-child { margin-bottom: 0; }
+.rituals-list strong { color: var(--cream); font-weight: 600; }
+
 .event-detail-list {
   list-style: none;
   margin: 0 0 1.5rem;
