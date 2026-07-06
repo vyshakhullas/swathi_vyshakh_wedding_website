@@ -329,23 +329,20 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   margin-top: clamp(2.5rem, 6vw, 4rem);
   padding-top: clamp(2rem, 5vw, 3rem);
   border-top: 1px solid rgba(250, 246, 239, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
-.timeline-row {
+.timeline-merge {
   display: flex;
   align-items: center;
   gap: clamp(1rem, 3vw, 2rem);
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .timeline-name {
   font-family: var(--font-display);
   font-size: 1.15rem;
   color: var(--cream);
-  min-width: 100px;
   flex-shrink: 0;
 }
 
@@ -353,7 +350,9 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
+  flex: 1 1 auto;
 }
 
 .timeline-stop {
@@ -846,7 +845,8 @@ footer {
 
   .hero-names-row { grid-column: 1 / -1; flex-wrap: wrap; }
 
-  .timeline-row { flex-direction: column; align-items: flex-start; }
+  .timeline-merge { flex-direction: column; }
+  .timeline-path { justify-content: flex-start; }
   .hero-meta { grid-column: 1 / -1; text-align: left; border-left: none; padding-left: 0; margin-top: 1.5rem; }
   .hero-sub { grid-column: 1 / -1; }
 
