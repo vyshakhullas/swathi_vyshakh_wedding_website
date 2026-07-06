@@ -388,6 +388,7 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   flex-direction: column;
   align-items: center;
   gap: 0.35rem;
+  flex-shrink: 0;
 }
 
 .pin {
@@ -416,11 +417,12 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   border: 3px solid var(--cream);
 }
 
-.timeline-line {
-  width: clamp(28px, 5vw, 56px);
-  height: 1px;
-  background: rgba(250, 246, 239, 0.35);
+.timeline-arrow {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: rgba(250, 246, 239, 0.55);
   margin-bottom: 1.6rem;
+  flex-shrink: 0;
 }
 
 .stop-label {
@@ -917,8 +919,22 @@ footer {
 
   .hero-names-row { flex-wrap: wrap; }
 
+  .hero.bg-beige {
+    background-size: min(300px, 62%) auto;
+    padding-bottom: clamp(6.5rem, 30vw, 9rem);
+  }
+
+  .story-timeline { padding-top: clamp(9.5rem, 34vw, 11rem); }
+
   .timeline-merge { flex-direction: column; }
-  .timeline-path { justify-content: flex-start; }
+  .timeline-path {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
 
   .section-head .section-index { grid-column: 1 / -1; margin-bottom: 0.5rem; }
   .section-head .heading-block { grid-column: 1 / -1; }
