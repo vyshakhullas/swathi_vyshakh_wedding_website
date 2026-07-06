@@ -696,6 +696,17 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   max-width: 220px;
   margin: 0 auto;
   border: 1px solid rgba(250, 246, 239, 0.35);
+  display: block;
+}
+
+.gifting-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cream);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ---------- RSVP ---------- */
