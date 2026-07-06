@@ -273,7 +273,6 @@ section.bg-green .section-index { -webkit-text-stroke-color: rgba(250, 246, 239,
 section.bg-terracotta .eyebrow { color: var(--green-dim); }
 section.bg-terracotta .heading-block h2 { color: var(--cream); }
 section.bg-terracotta .heading-block p,
-section.bg-terracotta .gallery-note,
 section.bg-terracotta .rsvp-intro p { color: rgba(250, 246, 239, 0.85); }
 section.bg-terracotta .section-index { -webkit-text-stroke-color: rgba(250, 246, 239, 0.45); }
 section.bg-terracotta .rsvp-deadline { border-top-color: rgba(250, 246, 239, 0.3); }
@@ -580,12 +579,6 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
 }
 .gallery-controls button:hover { opacity: 0.7; }
 
-.gallery-note {
-  margin-top: 1.5rem;
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-}
-
 /* ---------- Travel guide ---------- */
 .travel-grid {
   display: grid;
@@ -707,6 +700,12 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   color: var(--cream);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.gifting-note {
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
+  color: rgba(250, 246, 239, 0.6);
 }
 
 /* ---------- RSVP ---------- */
