@@ -148,7 +148,6 @@ a { color: inherit; }
 /* ---------- Hero ---------- */
 .hero {
   padding: clamp(3rem, 10vw, 7rem) 0 clamp(3rem, 8vw, 5rem);
-  border-bottom: 1px solid var(--line);
 }
 
 .hero-grid {
@@ -232,7 +231,29 @@ a { color: inherit; }
 
 /* ---------- Section shell ---------- */
 section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
-section + section { border-top: 1px solid var(--line); }
+
+/* ---------- Section background variants ---------- */
+.bg-beige { background: var(--paper); }
+
+.bg-green { background: var(--green); }
+.bg-green .eyebrow { color: var(--terracotta); }
+.bg-green .heading-block h2,
+.bg-green .hero-names { color: var(--cream); }
+.bg-green .heading-block p { color: rgba(250, 246, 239, 0.75); }
+.bg-green .section-index { -webkit-text-stroke-color: rgba(250, 246, 239, 0.4); }
+
+.bg-terracotta { background: var(--terracotta); }
+.bg-terracotta .eyebrow { color: var(--green-dim); }
+.bg-terracotta .heading-block h2,
+.bg-terracotta .hero-names { color: var(--cream); }
+.bg-terracotta .heading-block p,
+.bg-terracotta .gallery-note,
+.bg-terracotta .rsvp-intro p { color: rgba(250, 246, 239, 0.85); }
+.bg-terracotta .section-index { -webkit-text-stroke-color: rgba(250, 246, 239, 0.45); }
+.bg-terracotta .rsvp-deadline { border-top-color: rgba(250, 246, 239, 0.3); }
+.bg-terracotta .rsvp-deadline .num { color: var(--cream); }
+.bg-terracotta .rsvp-deadline .label { color: rgba(250, 246, 239, 0.7); }
+.bg-terracotta .gallery-grid figure { border-color: rgba(250, 246, 239, 0.35); }
 
 .section-head {
   display: grid;
