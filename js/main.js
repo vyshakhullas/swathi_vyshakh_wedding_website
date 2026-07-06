@@ -64,23 +64,24 @@ if (gallerySlider && galleryPrev && galleryNext) {
   });
 }
 
-// ---------- RSVP form: AJAX submit to Netlify Forms ----------
+// ---------- RSVP form: submit straight into the Google Sheet ----------
+// Deployed from google-apps-script/Code.gs — see google-apps-script/README.md.
+const RSVP_ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+
 const rsvpForm = document.getElementById('rsvpForm');
 const formSuccess = document.getElementById('formSuccess');
-
-function encodeFormData(form) {
-  const data = new FormData(form);
-  return new URLSearchParams(data).toString();
-}
 
 if (rsvpForm) {
   rsvpForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    fetch('/', {
+    // Apps Script Web Apps don't return CORS headers, so the response is
+    // opaque here (mode: 'no-cors') — the POST still lands and appends the
+    // row server-side, we just can't read a confirmation back.
+    fetch(RSVP_ENDPOINT, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encodeFormData(rsvpForm),
+      mode: 'no-cors',
+      body: new FormData(rsvpForm),
     })
       .then(() => {
         rsvpForm.style.display = 'none';
