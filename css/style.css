@@ -501,6 +501,7 @@ section.bg-terracotta .gallery-grid figure { border-color: rgba(250, 246, 239, 0
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(1.5rem, 3vw, 2.5rem);
   max-width: 640px;
+  margin: 0 auto;
 }
 
 .gifting-card {
