@@ -411,8 +411,8 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
 .blob.cream { background: var(--cream); }
 .blob.terracotta { background: var(--terracotta); }
 .blob.final {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   background: transparent;
   border: 3px solid var(--cream);
 }
