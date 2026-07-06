@@ -164,17 +164,18 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: clamp(0.75rem, 2.5vw, 1.75rem);
+  --name-size: clamp(3rem, 9vw, 7.5rem);
 }
 
 .hero-names {
-  font-size: clamp(3rem, 9vw, 7.5rem);
+  font-size: var(--name-size);
   margin: 0;
 }
 
 .couple-avatar {
   flex-shrink: 0;
-  width: clamp(52px, 7vw, 96px);
-  height: clamp(52px, 7vw, 96px);
+  width: var(--name-size);
+  height: var(--name-size);
   border-radius: 50%;
   object-fit: cover;
 }

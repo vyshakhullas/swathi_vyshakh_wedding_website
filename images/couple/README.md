@@ -1,14 +1,10 @@
-# Adding your own photos
+# Couple photos
 
-`swathi.svg` and `vyshakh.svg` are placeholder circular avatars shown beside the names in the
-hero section. To swap in real photos, drop square (or centered) photos into this folder and
-update the `src` values in `index.html` (in the `.hero-names-row` markup near the top), e.g.:
+`swathi.jpg` and `vyshakh.jpg` are the real circular avatars shown beside the names in the hero
+section (resized to 400x400 and compressed from the originals with `ffmpeg`).
 
-```html
-<img class="couple-avatar" src="images/couple/swathi.svg" alt="Swathi">
-```
-
-becomes:
+To swap in new photos, replace the files in this folder (keeping the same names) or update the
+`src` values in `index.html` (in the `.hero-names-row` markup near the top), e.g.:
 
 ```html
 <img class="couple-avatar" src="images/couple/swathi.jpg" alt="Swathi">
