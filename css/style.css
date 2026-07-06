@@ -160,7 +160,7 @@ a { color: inherit; }
 .hero-eyebrow { grid-column: 1 / -1; margin-bottom: 1rem; }
 
 .hero-names-row {
-  grid-column: 1 / 10;
+  grid-column: 1 / -1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,10 +211,11 @@ a { color: inherit; }
 }
 
 .hero-sub {
-  grid-column: 1 / 8;
+  grid-column: 1 / -1;
   margin-top: 2rem;
   font-size: clamp(1rem, 1.4vw, 1.15rem);
   color: var(--ink-soft);
+  text-align: center;
 }
 
 .countdown {
@@ -847,11 +848,10 @@ footer {
     gap: 1.25rem;
   }
 
-  .hero-names-row { grid-column: 1 / -1; flex-wrap: wrap; }
+  .hero-names-row { flex-wrap: wrap; }
 
   .timeline-merge { flex-direction: column; }
   .timeline-path { justify-content: flex-start; }
-  .hero-sub { grid-column: 1 / -1; }
 
   .section-head .section-index { grid-column: 1 / -1; margin-bottom: 0.5rem; }
   .section-head .heading-block { grid-column: 1 / -1; }
