@@ -309,8 +309,8 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
 
 .event-card .event-tag {
   align-self: flex-start;
-  background: var(--cream);
-  color: var(--green);
+  background: var(--terracotta);
+  color: var(--cream);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -318,8 +318,6 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   padding: 0.4rem 0.8rem;
   margin-bottom: 1.5rem;
 }
-
-.event-card.reception .event-tag { background: var(--terracotta); color: var(--cream); }
 
 .event-card h3 {
   font-family: var(--font-display);
