@@ -506,7 +506,7 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
 }
 
 .gifting-card {
-  background: var(--paper);
+  background: var(--terracotta);
   border: 1px solid var(--line);
   padding: clamp(1.5rem, 3vw, 2rem);
   text-align: center;
@@ -515,13 +515,13 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
 .gifting-card h3 {
   font-family: var(--font-display);
   font-size: 1.3rem;
-  color: var(--green);
+  color: var(--cream);
   margin: 0 0 0.35rem;
 }
 
 .gifting-sub {
   font-size: 0.82rem;
-  color: var(--ink-soft);
+  color: rgba(250, 246, 239, 0.8);
   margin: 0 0 1.25rem;
 }
 
@@ -529,7 +529,7 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
   width: 100%;
   max-width: 220px;
   margin: 0 auto;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(250, 246, 239, 0.35);
 }
 
 /* ---------- RSVP ---------- */
