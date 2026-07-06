@@ -669,6 +669,14 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   margin-bottom: 0.75rem;
 }
 
+.attire-img-grid {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  margin-bottom: 0.75rem;
+}
+
 .attire-card h3 {
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
