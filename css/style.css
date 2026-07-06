@@ -937,11 +937,19 @@ footer {
   .hero-names-row { flex-wrap: wrap; }
 
   .hero.bg-beige {
-    background-size: min(300px, 62%) auto;
-    padding-bottom: clamp(6.5rem, 30vw, 9rem);
+    background-size: 100% auto;
+    padding-bottom: clamp(8.5rem, 40vw, 21rem);
   }
 
-  .story-timeline { padding-top: clamp(9.5rem, 34vw, 11rem); }
+  .story-timeline {
+    margin-left: calc(-1 * var(--gutter));
+    margin-right: calc(-1 * var(--gutter));
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    background-origin: border-box;
+    background-size: 100% auto;
+    padding-top: clamp(10rem, 38vw, 21.5rem);
+  }
 
   .timeline-merge { flex-direction: column; }
   .timeline-path {
