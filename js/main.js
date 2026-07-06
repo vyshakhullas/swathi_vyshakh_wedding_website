@@ -49,6 +49,21 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+// ---------- Gallery slider ----------
+const gallerySlider = document.getElementById('gallerySlider');
+const galleryPrev = document.getElementById('galleryPrev');
+const galleryNext = document.getElementById('galleryNext');
+
+if (gallerySlider && galleryPrev && galleryNext) {
+  const scrollByAmount = () => gallerySlider.clientWidth * 0.8;
+  galleryPrev.addEventListener('click', () => {
+    gallerySlider.scrollBy({ left: -scrollByAmount(), behavior: 'smooth' });
+  });
+  galleryNext.addEventListener('click', () => {
+    gallerySlider.scrollBy({ left: scrollByAmount(), behavior: 'smooth' });
+  });
+}
+
 // ---------- RSVP form: AJAX submit to Netlify Forms ----------
 const rsvpForm = document.getElementById('rsvpForm');
 const formSuccess = document.getElementById('formSuccess');
