@@ -447,6 +447,10 @@ section.bg-terracotta .gallery-slider figure { border-color: rgba(250, 246, 239,
   flex-direction: column;
 }
 
+/* The wedding card is the tallest, so it spans both rows and the
+   after party + reception cards stack beside it. */
+.event-card.wedding { grid-row: span 2; }
+
 .event-card .event-tag {
   align-self: flex-start;
   background: var(--terracotta);
@@ -965,6 +969,7 @@ footer {
   .section-head .heading-block { grid-column: 1 / -1; }
 
   .events-grid { grid-template-columns: 1fr; }
+  .event-card.wedding { grid-row: auto; }
 
   .gallery-slider img { height: min(50vh, 400px); max-width: 88vw; }
 
